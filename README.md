@@ -28,3 +28,19 @@ Install Nginx reverse proxy to make this application available
 
 `sudo apt-get update`
 `sudo apt install nginx`
+
+
+
+
+
+
+For enabling reversy proxy through nginx in the nginx config file you'll need to edit a path
+The path of the file is /etc/nginx/sites-enabled
+The file name is default and under the server section make sure you edit the location section
+proxy_pass http://127.0.0.1:8000
+
+Also add the line if it isnt present
+        location /api {
+                proxy_pass http://127.0.0.01:8000;
+        }
+
