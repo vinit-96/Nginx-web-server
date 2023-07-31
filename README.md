@@ -38,7 +38,8 @@ Install Nginx reverse proxy to make this application available
 
 
 
-For enabling reversy proxy through nginx in the nginx config file you'll need to edit a path
+For enabling reversy proxy through nginx, in the nginx config file you'll need to edit a path
+
 The path of the file is /etc/nginx/sites-enabled
 The file name is default and under the server section make sure you edit the location section
 proxy_pass http://127.0.0.1:8000
